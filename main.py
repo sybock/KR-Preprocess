@@ -1,5 +1,12 @@
 from kr_preprocess import PreProcessing
 import argparse
+import logging
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+logging.basicConfig(format='%(asctime)s - %(message)s',
+                    datefmt='%Y-%m-%d %H:%M:%S',
+                    level=logging.INFO)
+
 
 if __name__ == "__main__":
 
@@ -10,7 +17,7 @@ if __name__ == "__main__":
     parser.add_argument("-o", "--output", \
                         type=str, default="ouput.txt", help="Output file path")
     parser.add_argument("-m", "--min_length", \
-                        type=int, help="Minimum length of line")
+                        type=int, default=7, help="Minimum length of line")
     parser.add_argument("--news", \
                         required=False, type=bool, default=False, \
                         help="Text has news articles")

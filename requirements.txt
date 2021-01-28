@@ -1,0 +1,2 @@
+soynlp
+regex

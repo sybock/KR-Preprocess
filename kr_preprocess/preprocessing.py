@@ -5,9 +5,6 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-# https://github.com/YongWookHa/kor-text-preprocess/blob/master/src/clean.py
-# https://github.com/monologg/KoELECTRA/blob/master/docs/preprocessing.md
-
 class PreProcessing(Document):
     def __init__(self, args):
         Document.__init__(self, args)

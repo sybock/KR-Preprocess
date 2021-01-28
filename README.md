@@ -34,7 +34,7 @@ python3 main.py -h
 python3 main.py -i /data/dataset.txt -o /data_cleaned/dataset.txt -m 10 --news True -dt True
 ```
 
-- You can add your custom regex functions to main.py to customize code for certain types of text data that require extra cleaning. 
+You can also add your custom regex functions to main.py to customize code for certain types of text data that require extra cleaning. 
 
 Example (in main.py):
 ```python
@@ -48,5 +48,5 @@ Example (in main.py):
 
 ## References
 
-https://github.com/YongWookHa/kor-text-preprocess
-https://monologg.kr/2020/05/02/koelectra-part1/#%EC%A0%84%EC%B2%98%EB%A6%AC-Preprocessing 
+- https://github.com/YongWookHa/kor-text-preprocess
+- https://monologg.kr/2020/05/02/koelectra-part1/#%EC%A0%84%EC%B2%98%EB%A6%AC-Preprocessing 
